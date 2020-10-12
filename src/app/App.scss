@@ -1,0 +1,42 @@
+$header-height: 140px;
+
+.App {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.App__Header {
+  height: $header-height;
+  background-color: #20232a;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.App__Main {
+  min-height: calc(100vh - #{$header-height});
+}
+
+.App__Nav {
+  display: flex;
+}
+
+.App__HeaderNavLink {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: inherit;
+  &:first-child {
+    margin-left: 0;
+  }
+  &.active {
+    color: #61dafb;
+    font-weight: 600;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
